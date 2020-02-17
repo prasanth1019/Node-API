@@ -1,7 +1,7 @@
 {
   "name": "nodeAPI",
   "version": "1.0.0",
-  "description": "",
+  "description": "An rest API for Messenger App",
   "main": "index.js",
   "scripts": {
     "lint": "eslint .",
@@ -9,9 +9,17 @@
     "start": "node server.js",
     "test": "./node_modules/.bin/mocha test/user.test.js"
   },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/prasanth1019/Node-API.git"
+  },
   "keywords": [],
-  "author": "",
+  "author": "prasanthram1019@ymail.com",
   "license": "ISC",
+  "bugs": {
+    "url": "git+https://github.com/prasanth1019/Node-API/issues"
+  },
+  "homepage": "https://github.com/prasanth1019/Node-API#readme",
   "dependencies": {
     "bcrypt": "^3.0.8",
     "body-parser": "^1.19.0",
