@@ -1,6 +1,5 @@
 require('dotenv').config();
 const express = require('express'),
-	favicon = require('serve-favicon'),
 	morgan = require('morgan'),
 	fs = require('fs'),
 	path = require('path'),
@@ -10,9 +9,8 @@ const express = require('express'),
 	appRoutes = require('./router');
 
 const app = express();
-app.use(favicon(path.join(__dirname, 'public', 'favicon.png')));
 
-app.use(appRoutes);
+app.use('/api/v1', appRoutes);
 app.use(cors());
 
 // create a write stream (in append mode)

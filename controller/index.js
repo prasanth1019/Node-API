@@ -1,7 +1,7 @@
 // use strict - enforce secure coding practices
 'use strict';
 
-const bcrypt = require('bcrypt'),
+const bcrypt = require('bcryptjs'),
 	UserInfo = require('../models/user-model'),
 	saltRounds = 10;
 
